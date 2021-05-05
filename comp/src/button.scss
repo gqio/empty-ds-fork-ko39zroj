@@ -1,0 +1,27 @@
+ @import '~/tokens/dist/_variables';
+
+ my-button {
+  display: inline;
+  padding: 0 $global-layout-layout-01;
+
+  &[size=big]{
+    font-size: $global-layout-layout-02;
+    padding: $global-layout-layout-01;
+  }
+
+  &:hover{
+    background-color:$global-colors-blue-20;
+    cursor: pointer;
+  }
+  background-color:$themes-white-ui-background;
+  box-shadow: 0 0 6px 1px $global-colors-blue-10;
+  
+  &[variant=secondary]{
+    background-color:unset;
+    box-shadow: unset;
+    color: $themes-white-ui-background;
+    &:hover{
+      box-shadow: 0 0 6px 1px $global-colors-gray-90;
+    }
+  }
+ }
